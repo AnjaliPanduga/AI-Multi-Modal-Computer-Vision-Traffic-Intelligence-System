@@ -2,8 +2,6 @@
 
 ## 📌 Project Overview
 
-## 📌 Detailed Project Overview
-
 The AI-Based Multi-Modal Computer Vision & Traffic Intelligence System is an integrated real-time computer vision and analytics platform designed to process multiple input modalities including static images, recorded videos, and live webcam streams.
 
 The system combines classical computer vision techniques with deep learning-based object detection models to perform:
