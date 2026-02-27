@@ -2,9 +2,28 @@
 
 ## 📌 Project Overview
 
-This project is an AI-powered multi-modal computer vision platform that performs real-time analytics on images, videos, and live webcam streams.
+## 📌 Detailed Project Overview
 
-The system integrates object detection, facial analysis, traffic monitoring, crowd analytics, and predictive modeling into a unified interactive dashboard built with Streamlit.
+The AI-Based Multi-Modal Computer Vision & Traffic Intelligence System is an integrated real-time computer vision and analytics platform designed to process multiple input modalities including static images, recorded videos, and live webcam streams.
+
+The system combines classical computer vision techniques with deep learning-based object detection models to perform:
+
+• Face and emotion detection  
+• Pedestrian tracking and crowd analytics  
+• Vehicle detection and traffic monitoring  
+• Entry and exit counting  
+• Congestion estimation and traffic flow measurement  
+• Predictive traffic analysis using machine learning  
+
+For vehicle detection, the system uses YOLOv8 to accurately identify cars, buses, and trucks from video frames. A centroid-based tracking algorithm assigns unique IDs to vehicles and monitors line-crossing events to compute traffic flow rates.
+
+Pedestrian detection is implemented using HOG + SVM, enabling real-time crowd monitoring with zone-based analytics, motion trails, and heatmap generation for density estimation.
+
+Emotion detection is implemented using multi-signal facial feature analysis, incorporating smile detection, edge density, brightness metrics, and region-based intensity analysis to classify emotions such as Happy, Sad, Angry, Surprised, and Neutral.
+
+All detection results are logged into a structured SQLite database, enabling traffic analysis, peak hour identification, congestion indexing, and statistical reporting. The system also integrates a Linear Regression model to predict short-term traffic trends.
+
+An interactive Streamlit dashboard visualizes real-time metrics, historical data trends, traffic density charts, and predictive analytics, making the platform suitable for smart city monitoring and intelligent surveillance applications.
 
 ---
 
