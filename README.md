@@ -95,7 +95,9 @@ AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System/
 
 1️⃣ Clone the repository:
 ```
-git clone https://github.com/AnjaliPanduga/AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System
+git clone https://github.com/AnjaliPanduga/AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System.git
+cd AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System
+
 ```
 
 2️⃣ Install dependencies:
@@ -108,8 +110,19 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+---
 
+## 👩‍💻 Author
 
+Anjali Panduga  
+
+Aspiring Data Analyst | AI & Computer Vision Enthusiast
+
+📧 Email: pandugaanjali2003@gmail.com
+
+🔗 GitHub: https://github.com/AnjaliPanduga
+
+---
 
 
 
