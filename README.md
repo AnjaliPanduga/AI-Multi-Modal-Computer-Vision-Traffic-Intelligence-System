@@ -93,6 +93,26 @@ AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System/
 
 ## 🚀 Run Locally
 
+1️⃣ Clone the repository:
+```
+git clone https://github.com/AnjaliPanduga/AI-Multi-Modal-Computer-Vision-Traffic-Intelligence-System
+```
+
+2️⃣ Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+3️⃣ Run the application:
+```
+streamlit run app.py
+```
+
+
+
+
+
+
 
 
 
