@@ -12,6 +12,13 @@ import plotly.graph_objects as go
 from collections import deque
 from PIL import Image
 from ultralytics import YOLO
+import os
+
+MODEL_PATH = "yolov8n.pt"
+
+# Delete corrupted model if exists
+if os.path.exists(MODEL_PATH):
+    os.remove(MODEL_PATH)
 import pandas as pd
 import sqlite3
 from datetime import datetime
@@ -249,7 +256,15 @@ hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 # YOLOv8 Vehicle Detection Model
-yolo_model = YOLO("yolov8n.pt")
+@st.cache_resource
+def load_yolo():
+    try:
+        return YOLO("yolov8n.pt")
+    except Exception as e:
+        st.error(f"YOLO model failed to load: {e}")
+        return None
+
+yolo_model = load_yolo()
 
 # ─────────────────────────────────────────────────────────────
 # SIDEBAR
@@ -1177,6 +1192,9 @@ elif mode == "car":
 
             frame_idx += 1
 
+            if yolo_model is None:
+                st.error("YOLO model not loaded. Cannot run detection.")
+                st.stop()
             results = yolo_model(frame)
             moving_cars = []
 
