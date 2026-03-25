@@ -1,10 +1,10 @@
-streamlit
 opencv-python-headless==4.8.0.76
-numpy
 pandas
 plotly
-ultralytics
 scikit-learn
 streamlit-webrtc
 requests
 Pillow
+streamlit==1.32.0
+numpy==1.26.4
+ultralytics==8.0.20
