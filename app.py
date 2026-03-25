@@ -1,7 +1,6 @@
 
 import io
 import os
-import cv2
 import time
 import queue
 import threading
@@ -16,6 +15,10 @@ from ultralytics import YOLO
 import pandas as pd
 import sqlite3
 from datetime import datetime
+try:
+    import cv2
+except ImportError:
+    st.error("OpenCV not installed properly. Check requirements.txt")
 
 from sklearn.linear_model import LinearRegression
 start_time = time.time()
