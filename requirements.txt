@@ -7,4 +7,5 @@ requests
 Pillow
 streamlit==1.32.0
 numpy==1.26.4
-ultralytics==8.0.20
+ultralytics==8.0.100
+torch==2.0.1
