@@ -1,5 +1,3 @@
-import os
-os.system("pip uninstall -y opencv-python")
 import io
 import os
 import time
@@ -13,7 +11,6 @@ import plotly.graph_objects as go
 from collections import deque
 from PIL import Image
 from ultralytics import YOLO
-import os
 
 MODEL_PATH = "yolov8n.pt"
 
