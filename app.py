@@ -1,4 +1,5 @@
-
+import os
+os.system("pip uninstall -y opencv-python")
 import io
 import os
 import time
